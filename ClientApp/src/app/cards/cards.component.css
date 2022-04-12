@@ -1,0 +1,11 @@
+
+.card-display{
+    width: 50%;
+  }
+
+
+  @media screen and (max-device-width: 500px) {
+    .card-display{
+        width: 100%;
+      }
+  }

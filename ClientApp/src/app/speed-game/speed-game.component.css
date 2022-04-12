@@ -1,0 +1,111 @@
+div {
+  font-family: Lato;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  border: 1px #6f2232;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.player {
+  /*border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  width: 1296px;
+  flex-direction: column;*/
+  background-color: #1a1a1d;
+  padding: 10px;
+}
+
+.play {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #4e4e50;
+  width: 400px;
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.continue {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #6f2232;
+  width: 400px;
+  padding: 0.5em;
+  justify-content: center;
+}
+
+.card {
+  padding: 0.75em 1.5em 0.75em 1em;
+  margin: 1.5em;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.card:hover {
+  outline: 3px solid #e23314;
+}
+
+.cdk-drag-placeholder {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  min-width: 0px;
+  max-width: 0px;
+  min-height: 0px;
+  max-height: 0px;
+}
+
+#playGame {
+  padding: 1%;
+  background-color: #4e4e50;
+}
+
+button {
+  background-color: #1a1a1d;
+  color: white;
+  font-size: large;
+  margin: 0.5%;
+}
+
+label {
+  font-size: x-large;
+  color: white;
+  margin: 1%;
+}
+
+.stack {
+  color: white;
+  margin: 5px 10px;
+  font-size: xx-large;
+}
+
+@media screen and (max-device-width: 500px) {
+  div#hand1.player {
+    width:100%;
+    min-height: 12.5em;
+  }
+  .middle{
+    min-height: 12.5em;
+
+  }
+  div#hand2.player {
+    width:100%;
+    min-height: 12.5em;
+  }
+  div#hand1.player.card{
+    transform: scale(2);
+  }
+}
